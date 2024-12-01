@@ -83,3 +83,29 @@ button:hover {
 #clear-comparison {
     margin-top: 10px;
 }
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .crypto-box {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1em;
+    }
+
+    .crypto-box {
+        font-size: 0.9em;
+    }
+}
