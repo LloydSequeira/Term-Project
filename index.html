@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Real-Time Cryptocurrency Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Cryptocurrency Tracker</h1>
+        <section id="crypto-listing">
+            <h2>Cryptocurrency Listing</h2>
+            <label for="sort-options">Sort by:</label>
+            <select id="sort-options">
+                <option value="market_cap_desc">Market Cap (High to Low)</option>
+                <option value="market_cap_asc">Market Cap (Low to High)</option>
+                <option value="price_desc">Price (High to Low)</option>
+                <option value="price_asc">Price (Low to High)</option>
+                <option value="change_desc">24h Change (High to Low)</option>
+                <option value="change_asc">24h Change (Low to High)</option>
+            </select>
+            <label>
+                <input type="checkbox" id="show-price-change" checked>
+                Show 24h Price Change
+            </label>
+            
+            <div id="crypto-list" class="grid-container"></div>
+        </section>
+        <section id="comparison-section">
+            <h2>Comparison Section</h2>
+            <div id="comparison-list" class="grid-container"></div>
+            <button id="clear-comparison">Clear Comparison</button>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
